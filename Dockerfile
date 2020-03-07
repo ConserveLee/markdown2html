@@ -2,7 +2,7 @@ FROM quanzhilong/md2html:basic
 MAINTAINER Lee "admin@lees.work"
 WORKDIR /go/src/markdownHtml
 ADD ./md2html .
-RUN chmod 755 -R .
+RUN chmod 777 -R .
 WORKDIR /go/src/markdownHtml/web
 RUN export GOPROXY=https://goproxy.io && \
  go mod init md2html && \
