@@ -5,6 +5,6 @@ ADD ./md2html .
 RUN chmod 777 -R .
 RUN go get "github.com/valyala/fasthttp" && \
  go build -o server ./web/main.go
-RUN ./watchFile
+RUN nohup ./watchFile &
 EXPOSE 8080
 CMD ["/go/src/markdownHtml/web/server"]
