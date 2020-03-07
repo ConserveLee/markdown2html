@@ -1,4 +1,4 @@
-
+[![Go Report Card](https://goreportcard.com/badge/github.com/ConserveLee/markdown2html)](https://goreportcard.com/report/github.com/ConserveLee/markdown2html)
 markdown2html 是一个将 markdown 自动转换并渲染为 html 的工具
 
 🚀 安装方式
