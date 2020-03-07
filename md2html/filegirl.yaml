@@ -54,8 +54,8 @@ command:
   #    {{changed}} 文件更新的本地时间戳(纳秒,如 1537326690523046400)
   # 变量占位符使用示例：cp {{file}} /root/sync -rf  、 myCommand --{{ext}} {{changed}}
   exec:
-    - pandoc ./web/data/index.md \
-      --output=./web/data/index.html \
+    - pandoc /go/src/markdownHtml/web/data/index.md \
+      --output=/go/src/markdownHtml/web/data/index.html \
       --to=html5 \
       --css=css/tufte.css \
       --metadata pagetitle="自定义标题" \

@@ -1,6 +1,6 @@
 #!/bin/sh
-pandoc ./web/data/index.md \
-      --output=./web/data/index.html \
+pandoc /go/src/markdownHtml/web/data/index.md \
+      --output=/go/src/markdownHtml/web/data/index.html \
       --to=html5 \
       --css=css/tufte.css \
       --metadata pagetitle="自定义标题" \
