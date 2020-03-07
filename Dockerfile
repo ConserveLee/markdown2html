@@ -7,4 +7,5 @@ WORKDIR /go/src/markdownHtml/web
 RUN go get "github.com/valyala/fasthttp" && \
  go build -o server .
 EXPOSE 8080
+WORKDIR /go/src/markdownHtml
 ENTRYPOINT ["./entrypoint.sh"]
