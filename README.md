@@ -8,7 +8,7 @@ markdown2html 是一个将 markdown 自动转换并渲染为 html 的工具
 2. (可选)编译基础镜像
 
 ```shell
-$ docker build -t {自定义镜像名} dockerfile/basic/
+$ docker build -t {自定义镜像名} docker/basic/
 ```
 
 3. (可选)修改 dockerfile/md2html/Dockerfile 'FROM quanzhilong/md2html:basic' 为你的自定义镜像名
