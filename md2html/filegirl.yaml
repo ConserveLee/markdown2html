@@ -54,13 +54,7 @@ command:
   #    {{changed}} 文件更新的本地时间戳(纳秒,如 1537326690523046400)
   # 变量占位符使用示例：cp {{file}} /root/sync -rf  、 myCommand --{{ext}} {{changed}}
   exec:
-    - pandoc /go/src/markdownHtml/web/data/index.md \
-      --output=/go/src/markdownHtml/web/data/index.html \
-      --to=html5 \
-      --css=/go/src/markdownHtml/css/tufte.css \
-      --metadata pagetitle="自定义标题" \
-      --highlight-style=haddock \
-      --self-contained
+    - /go/src/markdownHtml/make.sh
 
   # 文件变更后命令在xx毫秒后才会执行，单位为毫秒
   # 一个变更事件(A)如果在定义的延迟时间(t)内，又有新的文件变更事件(B)，那么A会取消执行。
