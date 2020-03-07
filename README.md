@@ -31,4 +31,5 @@ $ docker run -p 8080:8080 -v /data/:/go/src/markdownHtml/web/data/ -d quanzhilon
 6. 测试运行
 ```
 # 稍后访问 localhost:8080 ，即可访问编译后的html
+# 脚本会自动监听 /data/index.md ，更新 markdown 文件即可自动重新渲染 html
 ```
