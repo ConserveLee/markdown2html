@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 pandoc ./web/data/index.md \
 --output=./web/data/index.html \
