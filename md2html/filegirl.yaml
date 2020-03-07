@@ -11,7 +11,7 @@ monitor:
   # test1,*     监听当前目录下 test1 目录及其所有子目录（递归）
   # .,*         监听当前目录及其所有子目录（递归）
   includeDirs:
-    - web
+    - web/data
 
   # 不监听的目录
   # .idea   忽略.idea目录及其所有子目录的监听
